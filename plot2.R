@@ -27,7 +27,7 @@ datas <- strptime(paste(analisar$Date, analisar$Time, sep=" "), "%d/%m/%Y %H:%M:
 # - para ficar em ingles (Thu, Fri, Sat), devemos usar o comando abaixo
 Sys.setlocale("LC_ALL", "English")
 # - para retornar ao Portugues do Brasil, usamos o seguinte comando
-# Sys.setlocale("LC_ALL", "Portugues_Brazil")
+# Sys.setlocale("LC_ALL", "Portuguese_Brazil")
 
 # imprimir o grafico PLOT, com a evolucao dos valores de Global_active_power no decorrer do tempo (datas)
 plot(datetime, as.numeric(analisar$Global_active_power), type="l", xlab="", ylab="Global Active Power (kilowatts)") 
